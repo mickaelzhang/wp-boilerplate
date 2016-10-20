@@ -1,0 +1,24 @@
+/**
+ * doc generator: http://warpspire.com/kss
+ */
+
+
+// Functions and mixins
+@import 'utils/functions';
+@import 'utils/mixins';
+
+// Contain global styles
+@import 'base/reset';
+@import 'base/typography';
+@import 'base/color';
+
+// Self-contained component
+@import 'components/buttons';
+@import 'components/navigation';
+
+// Layout (eg. header, footer, nav)
+@import 'layout/header';
+@import 'layout/footer';
+
+// For specific pages
+@import 'pages/home';

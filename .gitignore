@@ -1,0 +1,69 @@
+# Ignore WordPress core system
+core/
+
+# Ignore languages files - Depend on user
+languages/
+
+# Misceallaenous
+upgrade/
+dist/
+.htaccess
+
+# Composer stuff
+vendor/
+composer.lock
+
+# ignore everything in the "ressources" directory, except:
+# mu-plugins, plugins, and themes directories
+ressources/*
+!ressources/mu-plugins/
+!ressources/plugins/
+!ressources/themes/
+
+# ignore all mu-plugins, plugins, and themes
+# unless explicitly whitelisted at the end of this file
+ressources/mu-plugins/*
+ressources/plugins/*
+ressources/themes/*
+
+# track these mu-plugins, plugins, and themes
+!ressources/themes/starter-theme/
+
+# Ignore config file
+.env
+
+# ignore node dependency directories (used by grunt and gulp)
+node_modules/
+
+# ignore OS generated files
+ehthumbs.db
+Thumbs.db
+
+# ignore Editor files
+*.sublime-project
+*.sublime-workspace
+*.komodoproject
+*.idea
+
+# ignore log files and databases
+*.log
+*.sql
+*.sqlite
+
+# ignore compiled files
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+
+# ignore packaged files
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
