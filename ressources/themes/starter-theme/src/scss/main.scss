@@ -8,9 +8,12 @@
 @import 'utils/mixins';
 
 // Contain global styles
+@import 'config/typography';
+@import 'config/color';
+@import 'config/setting';
+
 @import 'base/reset';
-@import 'base/typography';
-@import 'base/color';
+@import 'base/grid';
 
 // Self-contained component
 @import 'components/buttons';
