@@ -2,6 +2,12 @@
 
 A WordPress boilerplate, it use composer to manage normal dependencies but also WordPress itself and plugins. The project has a gulp config already installed.
 
+## Requirement
+To run this boilerplate, you need :
+* At least `PHP 5.5`
+* `composer` installed
+* `npm` installed
+
 ## Installation
 First, install all the dependencies by running :
 
