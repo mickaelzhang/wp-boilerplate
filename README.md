@@ -3,7 +3,7 @@
 A WordPress boilerplate, it use composer to manage normal dependencies but also WordPress itself and plugins. The project has a gulp config already installed.
 
 ## Installation
-First, install all the dependencies by reunning :
+First, install all the dependencies by running :
 
 ```
 $ composer update
