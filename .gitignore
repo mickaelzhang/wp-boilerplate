@@ -1,5 +1,5 @@
 # Ignore WordPress core system
-core/
+/core/
 
 # Ignore languages files - Depend on user
 languages/
