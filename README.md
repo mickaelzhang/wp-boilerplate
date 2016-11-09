@@ -1,6 +1,12 @@
 # wp-boilerplate
 
-A WordPress boilerplate, it use composer to manage normal dependencies but also WordPress itself and plugins. The project has a gulp config already installed.
+This boilerplate is for WordPress project, it was built for myself for my own project and also to learn more about WordPress. That's why it's probably very opiniated, feel free to use and change it for your own project !
+
+## What does the boilerplate contain
+* WordPress Plugins are composer dependencies ([WordPress Packagist](https://wpackagist.org))
+* WordPress itself is a composer dependencies
+* Gulp is included
+* [Timber](https://upstatement.com/timber/)
 
 ## Requirement
 To run this boilerplate, you need :
@@ -12,7 +18,7 @@ To run this boilerplate, you need :
 First, install all the dependencies by running :
 
 ```
-$ composer update
+$ composer install
 ```
 
 And then, set a `.env` file by running :
