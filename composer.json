@@ -43,7 +43,7 @@
       "cp bootstrap/.env.example .env",
       "php bootstrap/env.php"
     ],
-		"clean": [
+		"clean-core": [
 			"rm -r core/wp-content ||:"
 		]
   }
