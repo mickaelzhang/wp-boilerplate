@@ -8,12 +8,11 @@ $path = __DIR__ . '\core\wp-content';
 // check accidential empty, root or relative pathes
 if (!empty($path)) {
     if (PHP_OS === 'WINNT') {
+        exec('rd /s /q "' . $path . '"');
+    }
+    else {
 
-        copy($srcfile, $dstfile);
-
-
-    } else {
-        exec("cp bootstrap/.env.example .env");
+        exec("rm -r core/wp-content ||:");
     }
 } else {
     error_log('path not valid:$path' . var_export($path, true));

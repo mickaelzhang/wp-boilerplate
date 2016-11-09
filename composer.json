@@ -42,6 +42,9 @@
         "setenv":  [
             "php setenv.php",
             "php bootstrap/env.php"
+        ],
+        "clean-core":[
+            "php clean-core.php"
         ]
     }
 }
