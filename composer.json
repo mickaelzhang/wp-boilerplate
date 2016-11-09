@@ -40,9 +40,8 @@
     },
     "scripts": {
         "setenv":  [
-            "cp bootstrap/.env.example .env",
-            "php bootstrap/env.php",
-            "rm -r core/wp-content ||:"
+            "php setenv.php",
+            "php bootstrap/env.php"
         ]
     }
 }
