@@ -1,8 +1,8 @@
 // ==== SCRIPTS ==== //
 
 var gulp     = require('gulp'),
-    plugins  = require('gulp-load-plugins')({ camelize: true }),
-    config     = require('../../gulpconfig');
+	  plugins  = require('gulp-load-plugins')({ camelize: true }),
+  	config   = require('../../gulpconfig');
 
 // Check core scripts for errors
 gulp.task('scripts-lint', function() {
