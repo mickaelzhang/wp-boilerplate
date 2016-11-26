@@ -1,7 +1,6 @@
 // ==== UTILITIES ==== //
 
 var gulp        = require('gulp'),
-    plugins     = require('gulp-load-plugins')({ camelize: true }),
     del         = require('del'),
     config      = require('../../gulpconfig');
 

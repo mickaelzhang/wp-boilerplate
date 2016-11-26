@@ -1,7 +1,9 @@
 // ==== SCRIPTS ==== //
 
 var gulp     = require('gulp'),
-	  plugins  = require('gulp-load-plugins')({ camelize: true }),
+    jshint   = require('gulp-jshint'),
+		concat   = require('gulp-concat'),
+		uglify   = require('gulp-uglify'),
   	config   = require('../../gulpconfig');
 
 // Check core scripts for errors
@@ -14,8 +16,8 @@ gulp.task('scripts-lint', function() {
     config.path.src + 'js/app/**/*.js',
     config.path.src + 'js/main.js'
   ])
-  .pipe(plugins.jshint())
-  .pipe(plugins.jshint.reporter('default')); // No need to pipe this anywhere
+  .pipe(jshint())
+  .pipe(jshint.reporter('default')); // No need to pipe this anywhere
 });
 
 // Minify scripts in place
@@ -27,11 +29,11 @@ gulp.task('scripts-minify', ['scripts-lint'], function(){
     config.path.src + 'js/main.js'
   ] )
   /* Name of the js file */
-  .pipe( plugins.concat( 'main.js' ) )
+  .pipe( concat( 'main.js' ) )
   /* Where the file should be put */
   .pipe( gulp.dest( config.path.build + 'js/' ) )
   /* Uglify file */
-  .pipe( plugins.uglify( {} ) )
+  .pipe( uglify( {} ) )
   /* Where the file should be put */
   .pipe( gulp.dest( config.path.build + 'js/' ) );
 });

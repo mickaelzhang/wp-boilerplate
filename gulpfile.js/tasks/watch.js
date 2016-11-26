@@ -1,7 +1,6 @@
 // ==== WATCH ==== //
 
 var gulp        = require('gulp'),
-    plugins     = require('gulp-load-plugins')({ camelize: true }),
     config      = require('../../gulpconfig');
 
 gulp.task('watch', ['build'], function() {
