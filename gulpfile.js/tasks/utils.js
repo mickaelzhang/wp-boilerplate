@@ -2,7 +2,7 @@
 
 var gulp        = require('gulp'),
     del         = require('del'),
-    config      = require('../../gulpconfig');
+    config      = require('../gulpconfig');
 
 // Totally wipe the contents of the `dist` folder to prepare for a clean build
 gulp.task('wipe-dist', function() {

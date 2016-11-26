@@ -1,7 +1,7 @@
 // ==== WATCH ==== //
 
 var gulp        = require('gulp'),
-    config      = require('../../gulpconfig');
+    config      = require('../gulpconfig');
 
 gulp.task('watch', ['build'], function() {
   gulp.watch(config.path.src + 'scss/**/*.scss', ['styles']);

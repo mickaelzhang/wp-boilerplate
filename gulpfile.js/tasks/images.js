@@ -3,7 +3,7 @@
 var gulp 	   = require('gulp'),
 		changed  = require('gulp-changed'),
     imagemin = require('gulp-imagemin'),
-  	config   = require('../../gulpconfig');
+  	config   = require('../gulpconfig');
 
 // Copy changed images from the source folder to `build` (fast)
 gulp.task('images', function() {

@@ -4,7 +4,7 @@ var gulp         = require('gulp'),
 		sass         = require('gulp-sass'),
 		autoprefixer = require('gulp-autoprefixer'),
 		cssnano      = require('gulp-cssnano'),
-    config       = require('../../gulpconfig');
+    config       = require('../gulpconfig');
 
 gulp.task('styles', function() {
   /* Where scss file come from */

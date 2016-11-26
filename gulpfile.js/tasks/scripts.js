@@ -4,7 +4,7 @@ var gulp     = require('gulp'),
     jshint   = require('gulp-jshint'),
 		concat   = require('gulp-concat'),
 		uglify   = require('gulp-uglify'),
-  	config   = require('../../gulpconfig');
+  	config   = require('../gulpconfig');
 
 // Check core scripts for errors
 gulp.task('scripts-lint', function() {
