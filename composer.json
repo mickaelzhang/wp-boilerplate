@@ -42,9 +42,6 @@
     "setenv": [
       "cp bootstrap/.env.example .env",
       "php bootstrap/env.php"
-    ],
-		"clean-core": [
-			"rm -r core/wp-content ||:"
-		]
+    ]
   }
 }
