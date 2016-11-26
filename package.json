@@ -9,6 +9,7 @@
   "author": "Mickael Zhang <mickael.zhg@gmail.Com>",
   "license": "MIT",
   "devDependencies": {
+    "browser-sync": "^2.18.2",
     "del": "^2.2.2",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^3.1.1",
