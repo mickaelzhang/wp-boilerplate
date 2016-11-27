@@ -15,7 +15,6 @@
     "johnpbloch/wordpress": "^4.6",
     "vlucas/phpdotenv": "^2.0",
     "timber/timber": "1.1.7.1",
-    "wpackagist-plugin/advanced-custom-fields": "^4.4",
     "wpackagist-plugin/wp-migrate-db": "^0.8.0"
   },
   "require-dev": {
