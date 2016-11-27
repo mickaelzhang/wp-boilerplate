@@ -36,3 +36,8 @@ new Core\SetupTimber();
  * Custom Post Types
    new PostType\PostTypeName();
  */
+
+// Include AJAX files
+foreach (glob(__DIR__.'/Ajax/*.php') as $filename) {
+	include $filename;
+}
