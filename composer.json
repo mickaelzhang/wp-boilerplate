@@ -26,9 +26,9 @@
   "extra": {
     "wordpress-install-dir": "core",
     "installer-paths" : {
-			"web/app/mu-plugins/{$name}/": ["type:wordpress-muplugin"],
-      "web/app/plugins/{$name}/": ["type:wordpress-plugin"],
-      "web/app/themes/{$name}/": ["type:wordpress-theme"]
+			"ressources/mu-plugins/{$name}/": ["type:wordpress-muplugin"],
+      "ressources/plugins/{$name}/": ["type:wordpress-plugin"],
+      "ressources/themes/{$name}/": ["type:wordpress-theme"]
     }
   },
   "autoload": {

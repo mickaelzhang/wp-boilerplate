@@ -1,9 +1,0 @@
-@mixin breakpoint($media) {
-    @each $breakpoint-name, $pixel in $breakpoints {
-        @if $media == $breakpoint-name {
-            @media (min-width: #{$pixel}) {
-                @content;
-            }
-        }
-    }
-}
