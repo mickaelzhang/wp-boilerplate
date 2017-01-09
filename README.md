@@ -1,18 +1,17 @@
 # wp-boilerplate
 
-This boilerplate is for WordPress project, it was built for myself for my own project and also to learn more about WordPress. That's why it's probably very opiniated, feel free to use and change it for your own project !
+This boilerplate was built for my own WordPress project, feel free to use it and change it as your own convenience. The structure is heavily inspired by [Bedrock](https://github.com/roots/bedrock).
 
 ## What does the boilerplate contain
-* WordPress Plugins are composer dependencies ([WordPress Packagist](https://wpackagist.org))
-* WordPress itself is a composer dependencies
-* Gulp is included
+* [WordPress Packagist](https://wpackagist.org)
+* Gulp tasks
 * [Timber](https://upstatement.com/timber/)
 
 ## Requirement
 To run this boilerplate, you need :
-* At least `PHP 5.5`
+* At least `PHP 5.6`
 * `composer` installed
-* `npm` installed
+* `yarn` or `npm` installed
 
 ## Installation
 First, install all the dependencies by running :
@@ -25,6 +24,7 @@ And then, set a `.env` file by running :
 
 ```
 $ composer setenv
+$ composer generate-salt
 ```
 
 Open the file '.env', this is where you put your configuration.
