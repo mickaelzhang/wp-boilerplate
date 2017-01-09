@@ -15,7 +15,8 @@
     "johnpbloch/wordpress": "^4.6",
     "vlucas/phpdotenv": "^2.0",
     "timber/timber": "1.1.7.1",
-    "wpackagist-plugin/wp-migrate-db": "^0.8.0"
+    "wpackagist-plugin/wp-migrate-db": "^0.8.0",
+    "oscarotero/env": "^1.0"
   },
   "require-dev": {
     "symfony/var-dumper": "^3.1",
@@ -31,9 +32,6 @@
     }
   },
   "autoload": {
-    "files": [
-      "bootstrap/helpers.php"
-    ],
     "psr-4": {
       "App\\": "ressources/themes/starter-theme/app/"
     }
