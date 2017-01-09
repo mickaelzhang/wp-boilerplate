@@ -1,0 +1,53 @@
+*,
+*:after,
+*:before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    max-width: $content-width;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.row {
+    width: 100%;
+    margin: 0 auto;
+    font-size: 0;
+}
+
+.column, .columns {
+    display: inline-block;
+    width: 100%;
+    font-size: $default-font-size;
+
+    img {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+}
+
+@each $breakpoint-name, $pixel in $breakpoints {
+    @include breakpoint($breakpoint-name) {
+        @for $i from 0 through $col_nb {
+            .#{$breakpoint-name}-#{$i} {
+                width: 100% / $col-nb * $i;
+            }
+
+            .#{$breakpoint-name}-offset-#{$i} {
+                margin-left: 100% / $col-nb * $i;
+            }
+
+            .#{$breakpoint-name}-pull-#{$i} {
+                transform: translateY(-100% / $col-nb * $i);
+            }
+
+            .#{$breakpoint-name}-push-#{$i} {
+                transform: translateY(100% / $col-nb * $i);
+            }
+        }
+    };
+}

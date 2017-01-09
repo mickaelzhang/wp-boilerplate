@@ -1,17 +1,17 @@
-# Ignore WordPress core system
-/core/
-
 # Ignore languages files - Depend on user
 languages/
 
 # Misceallaenous
 upgrade/
 dist/
-.htaccess
 
 # Composer stuff
 vendor/
 composer.lock
+
+# WordPress
+ressources/core
+ressources/.htaccess
 
 # ignore everything in the "ressources" directory, except:
 # mu-plugins, plugins, and themes directories
@@ -27,13 +27,14 @@ ressources/plugins/*
 ressources/themes/*
 
 # track these mu-plugins, plugins, and themes
-!ressources/themes/starter-theme/
+!ressources/themes/mz/
 
 # Ignore config file
 .env
 
 # ignore node dependency directories (used by grunt and gulp)
 node_modules/
+yarn.lock
 
 # ignore OS generated files
 ehthumbs.db
