@@ -40,7 +40,9 @@
   "scripts": {
     "setenv": [
       "cp bootstrap/.env.example .env",
-      "php bootstrap/env.php"
-    ]
+    ],
+		"generate-salt": [
+			"php bootstrap/env.php",
+		]
   }
 }
