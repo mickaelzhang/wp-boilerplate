@@ -15,18 +15,11 @@ ressources/.htaccess
 
 # ignore everything in the "ressources" directory, except:
 # mu-plugins, plugins, and themes directories
-ressources/*
-!ressources/mu-plugins/
-!ressources/plugins/
-!ressources/themes/
-
-# ignore all mu-plugins, plugins, and themes
-# unless explicitly whitelisted at the end of this file
 ressources/mu-plugins/*
+!ressources/mu-plugins/.gitkeep
 ressources/plugins/*
+!ressources/plugins/.gitkeep
 ressources/themes/*
-
-# track these mu-plugins, plugins, and themes
 !ressources/themes/mz/
 
 # Ignore config file
