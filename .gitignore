@@ -10,7 +10,7 @@ vendor/
 composer.lock
 
 # WordPress
-web/core
+web/wp
 web/.htaccess
 
 # ignore everything in the "web" directory, except:
