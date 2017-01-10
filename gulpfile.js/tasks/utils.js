@@ -29,6 +29,6 @@ gulp.task('copy-theme', ['clean-build'], function() {
     '!' + config.path.theme + '{vendor,vendor/**}'
   ])
   .pipe(gulp.dest(
-    config.path.dist + 'ressources/themes/' + config.theme.name + '/'
+    config.path.dist + config.theme.name
   ));
 });

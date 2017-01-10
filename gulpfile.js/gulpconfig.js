@@ -1,7 +1,7 @@
 // ==== CONFIGURATION ==== //
 
 var THEME_NAME = 'starter-theme', // Directory name of the theme
-    THEME_PATH = './ressources/themes/' + THEME_NAME + '/'; // Path to your theme
+    THEME_PATH = './web/themes/' + THEME_NAME + '/'; // Path to your theme
 
 // Project settings
 module.exports = {
