@@ -10,17 +10,17 @@ vendor/
 composer.lock
 
 # WordPress
-ressources/core
-ressources/.htaccess
+web/core
+web/.htaccess
 
-# ignore everything in the "ressources" directory, except:
+# ignore everything in the "web" directory, except:
 # mu-plugins, plugins, and themes directories
-ressources/mu-plugins/*
-!ressources/mu-plugins/.gitkeep
-ressources/plugins/*
-!ressources/plugins/.gitkeep
-ressources/themes/*
-!ressources/themes/mz/
+web/mu-plugins/*
+!web/mu-plugins/.gitkeep
+web/plugins/*
+!web/plugins/.gitkeep
+web/themes/*
+!web/themes/mz/
 
 # Ignore config file
 .env
