@@ -24,7 +24,7 @@
     "wpackagist-plugin/force-regenerate-thumbnails": "^2.0"
   },
   "extra": {
-    "wordpress-install-dir": "core",
+    "wordpress-install-dir": "ressources/core",
     "installer-paths" : {
 			"ressources/mu-plugins/{$name}/": ["type:wordpress-muplugin"],
       "ressources/plugins/{$name}/": ["type:wordpress-plugin"],
