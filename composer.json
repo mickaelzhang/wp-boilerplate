@@ -37,11 +37,10 @@
     }
   },
   "scripts": {
-    "setenv": [
-      "cp bootstrap/.env.example .env"
-    ],
-		"generate-salt": [
-			"php bootstrap/env.php"
-		]
+    "set-project": [
+			"rm -rf .git",
+			"cp bootstrap/.env.example .env"
+		],
+		"generate-salt": "php bootstrap/env.php"
   }
 }
