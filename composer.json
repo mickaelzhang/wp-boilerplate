@@ -6,7 +6,19 @@
     {
       "type": "composer",
       "url": "https://wpackagist.org"
-    }
+	  },
+	  {
+		"type": "package",
+		"package": {
+		  "name": "advanced-custom-fields/advanced-custom-fields-pro",
+		  "version": "5.5.3",
+		  "type": "wordpress-plugin",
+		  "dist": {
+				"type": "zip",
+				"url": "https://connect.advancedcustomfields.com/index.php?p=pro&a=download"
+			  }
+			}
+	  }
   ],
   "minimum-stability" : "stable",
   "require": {
@@ -16,7 +28,9 @@
     "vlucas/phpdotenv": "^2.0",
     "timber/timber": "1.1.7.1",
     "wpackagist-plugin/wp-migrate-db": "^0.8.0",
-    "oscarotero/env": "^1.0"
+    "oscarotero/env": "^1.0",
+		"philippbaschke/acf-pro-installer": "^1.0",
+		"advanced-custom-fields/advanced-custom-fields-pro": "^5.5"
   },
   "require-dev": {
     "symfony/var-dumper": "^3.1",
