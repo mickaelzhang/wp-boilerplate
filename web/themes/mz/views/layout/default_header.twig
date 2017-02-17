@@ -1,0 +1,8 @@
+<header>
+	<h1 class="hdr-logo" role="banner">
+		<a href="{{site.url}}" rel="home">{{site.name}}</a>
+	</h1>
+	<nav>
+		{% include "components/menu.twig" with {'menu': menu.get_items} %}
+	</nav>
+</header>

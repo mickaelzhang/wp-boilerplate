@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html class="no-js ie ie6 lt-ie9 lt-ie8 lt-ie7" {{site.language_attributes}}> <![endif]-->
+<!--[if IE 7]><html class="no-js ie ie7 lt-ie9 lt-ie8" {{site.language_attributes}}> <![endif]-->
+<!--[if IE 8]><html class="no-js ie ie8 lt-ie9" {{site.language_attributes}}> <![endif]-->
+<!--[if gt IE 8]><!--><html {{site.language_attributes}}> <!--<![endif]-->
+    <head>
+        <meta charset="{{site.charset}}" />
+        <title>
+			{% block title %}
+			{% endblock %}
+		</title>
+		<meta name="description" content="{{site.description}}">
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		{{ function('wp_head') }}
+        {% block stylesheets %}
+		{% endblock %}
+    </head>
+    <body class="{{body_class}}">
+        {% block body %}{% endblock %}
+		{{ function('wp_footer') }}
+        {% block javascripts %}{% endblock %}
+    </body>
+</html>

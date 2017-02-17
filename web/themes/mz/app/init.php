@@ -19,14 +19,6 @@ if ( ! class_exists( 'Timber' ) ) {
 	return;
 }
 
-Timber::$dirname = array(
-	'/views/templates/',
-	'/views/layout/',
-	'/views/components/',
-	'/views/pages/',
-	'/views/ajax/'
-);
-
 //
 new Core\BaseTheme();
 new Core\SetupTheme();

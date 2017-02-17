@@ -1,0 +1,19 @@
+{% extends 'bases/default.twig' %}
+
+{% block title %}
+	{% if wp_title %}
+		{{ wp_title }} - {{ site.name }}
+	{% else %}
+		{{ site.name }}
+	{% endif %}
+{% endblock %}
+
+{% block body %}
+    {% block header %}
+		{% include 'layout/default_header.twig' %}
+    {% endblock %}
+    {% block content %}
+    {% endblock %}
+    {% block footer %}
+    {% endblock %}
+{% endblock %}
