@@ -4,11 +4,17 @@ var gulp         = require('gulp'),
 		sass         = require('gulp-sass'),
 		autoprefixer = require('gulp-autoprefixer'),
 		cssnano      = require('gulp-cssnano'),
+		plumber      = require('gulp-plumber'),
     config       = require('../gulpconfig');
 
 gulp.task('styles', function() {
   /* Where scss file come from */
   return gulp.src( config.path.src + 'scss/**/*.scss' )
+	/* Prevent pipe breaking */
+	.pipe(plumber(function(error) {
+			console.log("Something happened!", error.message);
+			this.emit('end');
+	}))
   /* SASS Config */
   .pipe( sass( {
     includePaths: [

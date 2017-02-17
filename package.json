@@ -23,5 +23,8 @@
     "gulp-uglify": "^2.0.0",
     "jshint": "^2.9.3",
     "require-dir": "^0.3.0"
+  },
+  "dependencies": {
+    "gulp-plumber": "^1.1.0"
   }
 }
