@@ -17,39 +17,23 @@ To run this boilerplate, you need :
 First, install all the dependencies by running :
 
 ```
-$ composer install
+composer install
+yarn install
 ```
 
-And then, set a `.env` file by running :
+And then, run :
 
 ```
-$ composer setenv
-$ composer generate-salt
+project:setup
 ```
 
-Open the file '.env', this is where you put your configuration.
+It will setup a `.env` file, it is where you put sensitive information such as database login.
 
-## Development
-The boilerplate use gulp as a task manager, install npm packages :
+## Scripts
+The boilerplate contain some script that help you during the development process.
 
-```
-$ npm install
-```
-
-If you just want to build your asset, run :
-
-```
-$ gulp build
-```
-
-If you're working on the front-end, watch your asset by running :
-
-```
-$ gulp
-```
-
-And if you want to export only your theme for production, you can run :
-
-```
-$ gulp dist
-```
+* `composer project:setup` : Use it at the initial setup of the project, it will add a .env file and remove the git linked to the boilerplate
+* `composer env:regenerate` : Regerate the .env file
+* `yarn run start` : Start the dev environment
+* `yarn run build` : Build all assets (css, js, font, image)
+* `yarn run images` : Copy image to the `dist` directory
