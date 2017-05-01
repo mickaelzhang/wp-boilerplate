@@ -54,10 +54,14 @@
     }
   },
   "scripts": {
-    "set-project": [
+    "project:setup": [
 			"rm -rf .git",
-			"cp bootstrap/.env.example .env"
+			"cp bin/.env.example .env",
+			"php bin/env.php"
 		],
-		"generate-salt": "php bootstrap/env.php"
+		"env:regenerate": [
+			"cp bin/.env.example .env",
+			"php bin/env.php"
+		]
   }
 }
