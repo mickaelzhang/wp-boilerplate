@@ -1,61 +1,59 @@
 {
-  "name": "mickaelzhang/wp-boilerplate",
-  "description": "Boilerplate for WordPress project",
-  "type":"wordpress",
-  "repositories": [
-    {
-      "type": "composer",
-      "url": "https://wpackagist.org"
-	  },
-	  {
+	"name": "mickaelzhang/wp-boilerplate",
+	"description": "Boilerplate for WordPress project",
+	"type": "wordpress",
+	"repositories": [{
+			"type": "composer",
+			"url": "https://wpackagist.org"
+		},
+		{
 			"type": "package",
 			"package": {
-			  "name": "advanced-custom-fields/advanced-custom-fields-pro",
-			  "version": "5.5.3",
-			  "type": "wordpress-plugin",
-			  "dist": {
+				"name": "advanced-custom-fields/advanced-custom-fields-pro",
+				"version": "5.5.3",
+				"type": "wordpress-plugin",
+				"dist": {
 					"type": "zip",
 					"url": "https://connect.advancedcustomfields.com/index.php?p=pro&a=download"
 				},
 				"require": {
-		      "philippbaschke/acf-pro-installer": "^1.0",
-		      "composer/installers": "^1.0"
-		    }
+					"philippbaschke/acf-pro-installer": "^1.0",
+					"composer/installers": "^1.0"
+				}
 			}
-	  }
-  ],
-  "minimum-stability" : "stable",
-  "require": {
-    "php": ">=5.5.0",
-    "composer/installers" : "~1.0",
-    "johnpbloch/wordpress": "^4.6",
-    "vlucas/phpdotenv": "^2.0",
-    "timber/timber": "1.1.7.1",
-    "wpackagist-plugin/wp-migrate-db": "^0.8.0",
-    "oscarotero/env": "^1.0",
+		}
+	],
+	"minimum-stability": "stable",
+	"require": {
+		"php": ">=5.5.0",
+		"composer/installers": "~1.0",
+		"johnpbloch/wordpress": "^4.6",
+		"vlucas/phpdotenv": "^2.0",
+		"timber/timber": "1.1.7.1",
+		"wpackagist-plugin/wp-migrate-db": "^0.8.0",
+		"oscarotero/env": "^1.0",
 		"philippbaschke/acf-pro-installer": "^1.0",
 		"advanced-custom-fields/advanced-custom-fields-pro": "^5.5"
-  },
-  "require-dev": {
-    "symfony/var-dumper": "^3.1",
-    "wpackagist-plugin/force-regenerate-thumbnails": "^2.0"
-  },
-  "extra": {
-    "wordpress-install-dir": "web/wp",
-    "installer-paths" : {
+	},
+	"require-dev": {
+		"symfony/var-dumper": "^3.1",
+		"wpackagist-plugin/force-regenerate-thumbnails": "^2.0"
+	},
+	"extra": {
+		"wordpress-install-dir": "web/wp",
+		"installer-paths": {
 			"web/mu-plugins/{$name}/": ["type:wordpress-muplugin"],
-      "web/plugins/{$name}/": ["type:wordpress-plugin"],
-      "web/themes/{$name}/": ["type:wordpress-theme"]
-    }
-  },
-  "autoload": {
-    "psr-4": {
-      "App\\": "web/themes/mz/app/"
-    }
-  },
-  "scripts": {
-    "project:setup": [
-			"rm -rf .git",
+			"web/plugins/{$name}/": ["type:wordpress-plugin"],
+			"web/themes/{$name}/": ["type:wordpress-theme"]
+		}
+	},
+	"autoload": {
+		"psr-4": {
+			"App\\": "web/themes/mz/app/"
+		}
+	},
+	"scripts": {
+		"project:setup": [
 			"cp bin/.env.example .env",
 			"php bin/env.php"
 		],
@@ -63,5 +61,5 @@
 			"cp bin/.env.example .env",
 			"php bin/env.php"
 		]
-  }
+	}
 }

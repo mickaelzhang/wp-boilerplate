@@ -32,7 +32,7 @@ It will setup a `.env` file, it is where you put sensitive information such as d
 ## Scripts
 The boilerplate contain some script that help you during the development process.
 
-* `composer project:setup` : Use it at the initial setup of the project, it will add a .env file and remove the git linked to the boilerplate
+* `composer project:setup` : Use it at the initial setup of the project, it will add a .env file
 * `composer env:regenerate` : Regerate the .env file
 * `yarn run start` : Start the dev environment
 * `yarn run build` : Build all assets (css, js, font, image)
